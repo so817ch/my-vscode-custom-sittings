@@ -2,5 +2,16 @@
     "semanticHighlighting": true,//highlight parameter in function blocks
     "colors":{
         "editorHoverWidget.highlightForeground": "#fc9867"//highlight in the hover hint block
-    }
+    },
+    "semanticTokenColors": {
+        "class.typeHint.builtin:python": {
+            /**
+             * i.e: .py
+             * sudoku: list[list[int]]
+             *         ^^^^ ^^^^ ^^^
+             */
+            "foreground": "#78dce8",
+            "fontStyle": "italic"
+        }
+    },
 }
